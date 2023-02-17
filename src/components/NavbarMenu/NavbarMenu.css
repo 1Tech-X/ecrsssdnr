@@ -1,0 +1,13 @@
+.navbarmenu{
+    background: rgb(2, 8, 94) !important;
+}
+.navbarmenu .nav-link{
+    color: #fff !important;
+    font-family: 'CircularStd', sans-serif;
+    text-transform: capitalize;
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+}
+.navbarmenu .nav-link:hover{
+    background: red;
+}

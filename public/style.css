@@ -1,0 +1,93 @@
+
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-y: hidden;
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Circular Std Book'), url('fonts/CircularStd-Book.woff') format('woff');
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Circular Std Book Italic'), url('fonts/CircularStd-BookItalic.woff') format('woff');
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Circular Std Medium'), url('fonts/CircularStd-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: italic;
+	font-weight: 500;
+	src: local('Circular Std Medium Italic'), url('fonts/CircularStd-MediumItalic.woff') format('woff');
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Circular Std Bold'), url('fonts/CircularStd-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: italic;
+	font-weight: 600;
+	src: local('Circular Std Bold Italic'), url('fonts/CircularStd-BoldItalic.woff') format('woff');
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Circular Std Black'), url('fonts/CircularStd-Black.woff') format('woff');
+}
+@font-face {
+	font-family: 'CircularStd';
+	font-style: italic;
+	font-weight: 800;
+	src: local('Circular Std Black Italic'), url('fonts/CircularStd-BlackItalic.woff') format('woff');
+}
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/MaterialIcons-Regular.eot);
+	/* For IE6-8 */
+	src: local('Material Icons'), local('MaterialIcons-Regular'), url(fonts/MaterialIcons-Regular.html) format('woff2'), url(fonts/MaterialIcons-Regular.woff) format('woff'), url(fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+html {
+	height: 100%;
+}
+body {
+	background-color: #f7f8f9;
+	color: #455560;
+	font-family: 'CircularStd', sans-serif;
+	font-size: 0.9375rem;
+	height: 100%;
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'CircularStd', sans-serif;
+	margin-top: 0;
+	color: #2c3038;
+}
+a:hover,
+a:active,
+a:focus {
+	outline: none;
+	text-decoration: none;
+}
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}

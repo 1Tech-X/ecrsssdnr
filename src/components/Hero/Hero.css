@@ -1,0 +1,88 @@
+/* .hero {
+    padding-left: 2rem ;
+    padding-right: 2rem ;
+} */
+.hero .col-md-9 img {
+    height: 400px !important;
+}
+.hero .col-md-3 .card{
+    height: 400px !important;
+    background: #F7E999;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    width: 20rem;
+  
+
+
+}
+.hero .col-md-3 .card .card-body{
+    overflow: hidden;
+}
+
+.hero .col-md-3 .card .card-header{
+    color: red;
+    font-family: 'CircularStd', sans-serif;
+    font-style: italic;
+}
+
+
+.hero .col-md-3 .card .list-group .list-group-item{
+    background: transparent;
+    border: none;
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+    font-family: 'CircularStd', sans-serif;
+    font-style: italic;
+}
+.hero .col-md-3 .card .list-group{
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 600px;
+   
+}
+.hero .col-md-3 .card .list-group .list-group-item a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+    font-family: 'CircularStd', sans-serif;
+    font-style: italic;
+    animation: slideup 4s linear;
+
+}
+
+
+
+@keyframes marquee {
+  0%   { -webkit-transform: translate(0, 0); }
+  100% { -webkit-transform: translate(0, -100%); }
+} 
+
+
+
+/* define your limiting container */
+.marquee {
+
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 600px;
+
+}
+/* this is the tray moving around your container */
+.marquee span {
+  display: inline-block;
+  text-indent: 0;
+  color: rgb(58, 58, 58);
+  animation: marquee 15s linear infinite; /* here you select the animation */
+  -webkit-animation: marquee 15s linear infinite; /* here you select the animation */
+  line-height: 30px;
+  font-weight: 600;
+}
+/* pause the animation on mouse over */
+.marquee span:hover {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+

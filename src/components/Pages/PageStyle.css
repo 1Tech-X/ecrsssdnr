@@ -1,0 +1,51 @@
+/* -----------------
+GALLERY
+--------------- */
+.gallery h1{
+    font-family: 'CircularStd', sans-serif; 
+    font-weight: 500;
+    position: relative;
+    padding-bottom:10px;
+    display:inline-block;
+    font-size: 30px;
+}
+.gallery h1:before
+{
+  content:"";
+  position:absolute;
+  top:100%;
+  left:1%;
+  width:36%;
+  border:2px solid #555;
+  border-radius:4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+
+}
+.gallery h1:hover.gallery h1:before
+{
+  animation: swing 1s linear ;
+  color: red;
+}
+@keyframes swing
+{
+  0%{
+      transform: translateX(0%);
+  }
+
+  25%{
+      transform: translateX(50%);
+  }
+
+  50%{
+      transform: translateX(100%);
+  }
+
+  75%{
+      transform: translateX(50%);
+  }
+
+  100%{
+      transform: translateX(0%);
+  }
+}
+
