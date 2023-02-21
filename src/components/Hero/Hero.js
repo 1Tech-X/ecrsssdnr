@@ -1,8 +1,27 @@
-import React from 'react'
-import { Card, Carousel, Col, Container, ListGroup, Row } from 'react-bootstrap';
+import React,{useState,useEffect} from 'react'
+import { Card, Carousel, Col, Container,  Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Hero.css';
+
 const Hero = () => {
+  const [getdata, setgetdata] = useState([]);
+  console.log(getdata)
+  const fetchData = () => {
+    fetch("https://ecrsssdnr.in/admin/noticefetch")
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        setgetdata(data)
+      })
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+     
+
   return (
     <div>
      <Container className='hero mt-2 mb-2'>
@@ -65,19 +84,16 @@ const Hero = () => {
          <Col md="3">
             <Card>
               <Card.Body>
-              <img src="https://www.kindpng.com/picc/m/392-3927594_cork-board-pin-png-transparent-png.png" alt="Cork Board Pin Png, Transparent Png@kindpng.com" style={{height:"30px"}} />
                 <Card.Header className='text-center mt-2'>Notice</Card.Header>
-                <p class="marquee">
-        <span>
-        Notice is a piece of. <a href="#">Click Here</a><br />
-        Notice is to be inform  <a href="#">Click Here</a><br />
-        Notice is to be  infor<a href="#">Click Here</a><br />
-        Notice is to be  infor<a href="#">Click Here</a><br />
-        Notice is to be infor<a href="#">Click Here</a> <br />
-        Notice is to be infor<a href="#">Click Here</a><br />
-          
-        </span>
-</p>
+                
+                <marquee  direction="up"  height="400" scrollamount="5" onmouseover="this.stop();" onmouseleave="this.start();">
+       
+                {getdata.map(notice => (<>
+                <Link  to={`/notice/${notice.id}`}>{notice.title}</Link><br></br>
+                <hr></hr>
+                </>))}
+                
+                </marquee>
               </Card.Body>
             </Card>
          </Col>

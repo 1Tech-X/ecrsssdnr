@@ -16,7 +16,7 @@ const NavbarMenu = () => {
             <Nav.Link as={Link} to='/'>Students</Nav.Link>
      
             <Nav.Link as={Link} to='/Gallery'>Gallery</Nav.Link>
-            <Nav.Link as={Link} to='/'>Achivement</Nav.Link>
+            {/* <Nav.Link as={Link} to='/'>Achivement</Nav.Link> */}
   
             <Nav.Link as={Link} to='/Contact-Us'>Contact Us</Nav.Link>
 

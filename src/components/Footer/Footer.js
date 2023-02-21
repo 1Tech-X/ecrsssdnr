@@ -14,7 +14,9 @@ const Footer = () => {
                         <div className="footer-about">
                             <h3>About Us</h3>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non quam. Tortor eu placerat rhoncus, lorem quam iaculis felis, sed lacus neque id eros
+                            दानापुर मंडल में खगौल स्थित रेलवे स्कूल की स्थापना 14
+था। प्रारम्भ में यह विद्यालय कलकत्ता विश्वविद्यालय से संबद्ध था।
+नवम्बर, 1889 को हुई थी।
                             </p>
                             <div className="footer-social">
                                 <Link to="" className='twitter'><i className="fab fa-twitter"></i></Link>
@@ -29,13 +31,13 @@ const Footer = () => {
                     <div className="col-md-6 col-lg-3">
                         <div className="footer-links">
                             <h3>Useful Links</h3>
-                            <Link to="">About US</Link>
+                            <Link to="/About-School">About US</Link>
                             <Link to="/Academic-Calendar">Calendar</Link>
-                            <Link to="">Contact us</Link>
+                            <Link to="/Contact-Us">Contact us</Link>
                             
                             <Link to="/Infrastructure">Infrastructure</Link>
-                            <Link to="">Nam pretium</Link>
-                            <Link to="">accumsan</Link>
+                            <Link to="/Faculty">Faculty</Link>
+                            <Link to="/Gallery">Gallery</Link>
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-3">
@@ -78,7 +80,7 @@ const Footer = () => {
                         </div>
                         <div className="col-md-6">
                             <div className="copy-menu">
-                                <Link to="">About</Link>
+                                <Link to="/about">About</Link>
                                 <Link to="">Terms</Link>
                                 <Link to="">Privacy</Link>
                                 <Link to="">Contact</Link>

@@ -1,4 +1,4 @@
-import React,{useState, useCallback} from 'react'
+import React,{useState, useCallback, useEffect} from 'react'
 import Header from '../Header/Header'
 import NavbarMenu from '../NavbarMenu/NavbarMenu'
 import Footer from '../Footer/Footer'
@@ -9,10 +9,24 @@ import { photoData } from './PhotoData'
 import { Container } from 'react-bootstrap'
 import './PageStyle.css';
 const PhotoGallery = () => {
+  const [getdata, setgetdata] = useState([]);
+  const fetchData = () => {
+    fetch("https://ecrsssdnr.in/admin/galleryapi")
+      .then(response => {
+        return response.json()
+      })
+      .then(data => {
+        setgetdata(data)
+      })
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
   
-    const openLightbox = useCallback((event, {photoData, index }) => {
+    const openLightbox = useCallback((event, {getdata, index }) => {
       setCurrentImage(index);
       setViewerIsOpen(true);
     }, []);
@@ -33,13 +47,13 @@ const PhotoGallery = () => {
         </div>
         
         <Container>
-        <Gallery photos={photoData} onClick={openLightbox} />
+        <Gallery photos={getdata} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photoData.map(x => ({
+              views={getdata.map(x => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title

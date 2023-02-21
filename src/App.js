@@ -9,12 +9,14 @@ import Contactus from "./components/Pages/Contactus";
 import Acadmenic from "./components/Pages/Acadmenic";
 import Infrastructure from "./components/Pages/Infrastructure";
 import Faculty from "./components/Pages/Faculty";
-import ScrollToTop from "react-scroll-to-top";
+import Notice from "./components/Pages/Notice";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
         <>
-        <ScrollToTop smooth color="#6f00ff" />
+      
         <BrowserRouter>
+        <ScrollToTop />
           <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About-School" element={<AboutUs />} />
@@ -23,6 +25,7 @@ function App() {
           <Route path="/Academic-Calendar" element={<Acadmenic />} />
           <Route path="/Infrastructure" element={<Infrastructure />} />
           <Route path="/Gallery" element={<PhotoGallery />} />
+          <Route path="/notice/:id" element={<Notice />} />
           </Routes>
         </BrowserRouter>
         </>

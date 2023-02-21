@@ -17,9 +17,9 @@ const Header = () => {
               <Navbar.Brand href="#home">
               <img
                 alt=""
-                src="/images/20230209_152205.png"
-                width="480"
-                height="90"
+                src="/images/20230221_072434.png"
+                width="240"
+                height="30"
                 className="d-inline-block ms-auto align-top"
               />
 

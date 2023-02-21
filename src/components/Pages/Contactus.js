@@ -33,7 +33,7 @@ const Contactus = () => {
                     </div>
                    
                     <div className="col-sm-4 single-contact-address-box main-branch">
-                        <h3>Lorem Ipsum</h3>
+                        <h3>Contact Details</h3>
                         <div className="inner">
                             <ul>
                                 <li>
@@ -90,7 +90,7 @@ const Contactus = () => {
                                 <div className="text"><div className="decor-left"><span></span></div><p>Contact Form</p></div>
                             </div>
                             <div className="text-box float-right">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <p>For Any Enquiry Send us message </p>
                             </div>
                         </div> 
                     </div>   

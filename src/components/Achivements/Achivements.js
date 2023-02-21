@@ -7,8 +7,8 @@ const Achivements = () => {
   
   <section className="a-section">
     <div class="left">
-      <h1>The center <br></br>for home <br></br><span>education</span></h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aliquid.</p>
+      <h1>Scholarships.<br></br>Honor Roll  <br></br><span>inclusion for high grades.</span></h1>
+      <p>Awards won for specific activities or subjects (i.e., Most Valuable Player (MVP), Fine Art Award)</p>
       <Link to='/'>See more</Link>
     </div>
     <div className="right">
